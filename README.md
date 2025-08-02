@@ -1,6 +1,8 @@
+<br>
 <p align="center">
-  <img src="assets/name.gif" width="100%" style="max-width: 600px; border-radius: 12px;" />
+  <img src="https://readme-typing-svg.demolab.com?font=Bitcount Prop Single&size=50&duration=3000&pause=500&color=AC3BFF&center=true&width=800&lines=Sp00kySkelet0n" alt="Cyberpunk Header" />
 </p>
+
 
 ## 🧬 About Me
 

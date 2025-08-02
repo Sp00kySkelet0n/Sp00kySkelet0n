@@ -1,0 +1,96 @@
+<!-- Deluxe looping Cyber-CRT Typewriter -->
+<link href="https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<div class="crt-frame">
+  <div class="glass-glare"></div>
+  <div class="crt-text" id="typewriter"></div>
+</div>
+
+<style>
+:root{
+  --accent:#d84dff; --bg-edge:#100022; --bg-center:#1b0036;
+  --radius:18px; --font-size:1.35rem;
+}
+body{
+  display:flex;justify-content:center;align-items:center;
+  min-height:100vh;margin:0;background:#080018;font-family:"Fira Mono",monospace;
+}
+.crt-frame{
+  position:relative;padding:3rem 3.5rem;border-radius:var(--radius);
+  border:2px solid var(--accent);
+  background:radial-gradient(circle at 50% 40%,var(--bg-center) 0%,var(--bg-edge) 85%);
+  box-shadow:0 0 22px 3px var(--accent) inset,0 0 32px 3px var(--accent);
+  overflow:hidden;max-width:680px;
+  animation:flicker 3.5s infinite steps(120);
+}
+.crt-frame::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(to bottom,rgba(255,255,255,.09) 0 1px,transparent 1px 3px);
+  animation:scanMove 60s linear infinite;mix-blend-mode:overlay;pointer-events:none;
+}
+.crt-frame::after{
+  content:"";position:absolute;inset:0;
+  background:repeating-radial-gradient(circle at 0 0,rgba(0,0,0,0) 0 1px,rgba(0,0,0,.07) 1px 2px);
+  opacity:.55;pointer-events:none;
+}
+.glass-glare{
+  position:absolute;inset:0;
+  background:radial-gradient(circle at 50% -10%,rgba(255,255,255,.15),transparent 55%);
+  mix-blend-mode:soft-light;pointer-events:none;
+}
+.crt-text{
+  color:var(--accent);white-space:pre;font-size:var(--font-size);letter-spacing:.045em;
+  text-shadow:0 0 4px var(--accent),0 0 10px var(--accent);user-select:none;
+}
+.cursor{
+  display:inline-block;width:.7ch;height:1em;background:var(--accent);margin-left:2px;
+  animation:blink .85s steps(2,start) infinite;
+}
+@keyframes blink{0%,100%{opacity:1;}50%{opacity:0;}}
+@keyframes scanMove{to{background-position-y:3px;}}
+@keyframes flicker{0%,100%{filter:brightness(1);}92%{filter:brightness(1.08);}95%{filter:brightness(.9);} }
+</style>
+
+<script>
+/* ------- LOOPING TYPEWRITER ------- */
+const text       = "Sp00kySkelet0n";
+const target     = document.getElementById("typewriter");
+const typeMin    = 40,  typeMax    = 100;  // typing speed (ms)
+const eraseMin   = 35,  eraseMax   = 70;   // erase speed
+const pauseAfterType  = 1000;              // ms to wait when fully typed
+const pauseAfterErase = 500;               // ms before typing again
+
+let pos = 0, mode = "typing";              // modes: typing | erasing
+
+function loop() {
+  if (mode === "typing") {
+    if (pos <= text.length) {
+      target.innerHTML = text.slice(0, pos) + '<span class="cursor"></span>';
+      pos++;
+      setTimeout(loop, rand(typeMin, typeMax));
+    } else {
+      mode = "pauseTyped";
+      setTimeout(loop, pauseAfterType);
+    }
+  } else if (mode === "pauseTyped") {
+    mode = "erasing";
+    setTimeout(loop, eraseMin);
+  } else if (mode === "erasing") {
+    if (pos >= 0) {
+      target.innerHTML = text.slice(0, pos) + '<span class="cursor"></span>';
+      pos--;
+      setTimeout(loop, rand(eraseMin, eraseMax));
+    } else {
+      mode = "pauseErased";
+      setTimeout(loop, pauseAfterErase);
+    }
+  } else if (mode === "pauseErased") {
+    mode = "typing";
+    setTimeout(loop, typeMin);
+  }
+}
+
+function rand(min, max) { return min + Math.random() * (max - min); }
+
+loop();   // kick it off
+</script>

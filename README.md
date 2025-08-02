@@ -1,7 +1,4 @@
-<p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Bitcount%20Prop%20Single&size=50&duration=3000&pause=500&color=AC3BFF&center=true&width=800&lines=Sp00kySkelet0n" alt="Cyberpunk Header"/>
-</p>
-
+[![Typing SVG](https://readme-typing-svg.demolab.com?font=Sixtyfour&size=30&pause=500&color=8D00F7&background=CE00FF00&center=true&vCenter=true&width=435&lines=Sp00kySkelet0n)](https://git.io/typing-svg)
 
 ## 🧬 About Me
 

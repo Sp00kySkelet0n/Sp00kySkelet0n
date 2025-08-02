@@ -1,19 +1,16 @@
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Sixtyfour&size=30&pause=500&color=8D00F7&background=CE00FF00&center=true&vCenter=true&width=435&lines=Sp00kySkelet0n)](https://git.io/typing-svg)
+[![NAME](https://readme-typing-svg.demolab.com?font=Sixtyfour&size=30&pause=500&color=8D00F7&background=CE00FF00&center=true&vCenter=true&width=435&lines=Sp00kySkelet0n)](https://git.io/typing-svg)
 
-## 🧬 About Me
+## 🧬 About
 
-- 🧑‍💻 **Name:** YOUR_NAME  
-- 🛠 **Tech Stack:** React · TypeScript · Next.js · Tailwind · Rust · Docker  
-- 🌌 **Currently learning:** Astro · tRPC · WebAssembly  
-- 🧠 **Fun Fact:** I design better in the dark. Literally.  
-- 📫 **Reach me:** your.email@example.com  
+- **Name:** Sp00kySkelet0n
+- **Whoami:** A student passionate about Offensive & Defensive security & DevOps/SelfHosting
+- **Reach me:** sp00kySkeleton@protonmail.com
 
----
-
-## 💻 Tech I Ride With
+<br>
+<br>
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nextjs,tailwind,python,rust,docker,git,kubernetes&theme=dark" alt="Tech stack" />
+  <img src="https://skillicons.dev/icons?i=python,nim,docker,ansible,git,kubernetes&theme=dark" alt="Tech stack" />
 </p>
 
 <p align="center">
@@ -24,24 +21,6 @@
 
 ## 🌌 Featured Projects
 
-- 🔧 [**NeonShell**](https://github.com/YOUR_USERNAME/NeonShell) – A terminal interface from 2099  
-- 🧱 [**SynthwaveCMS**](https://github.com/YOUR_USERNAME/SynthwaveCMS) – Cyberpunk-inspired headless CMS  
-- 🧪 [**GlowStack**](https://github.com/YOUR_USERNAME/GlowStack) – React + tRPC starter with purple vibes  
-
----
-
-## 🎵 Now Playing
-
-<p align="center">
-  <img src="https://spotify-github-profile.vercel.app/api/view?uid=YOUR_SPOTIFY_ID&cover_image=true&theme=novatorem&bar_color=ac3bff&bar_color_cover=false" alt="Spotify Now Playing" />
-</p>
-
----
-
-## 🤝 Let’s Connect
-
-<p align="center">
-  <a href="mailto:your.email@example.com"><img src="https://img.shields.io/badge/email-ac3bff?style=for-the-badge&logo=gmail&logoColor=white" /></a>
-  <a href="https://linkedin.com/in/YOUR_USERNAME"><img src="https://img.shields.io/badge/linkedin-8000ff?style=for-the-badge&logo=linkedin&logoColor=white" /></a>
-  <a href="https://x.com/YOUR_USERNAME"><img src="https://img.shields.io/badge/x-000000?style=for-the-badge&logo=x&logoColor=white" /></a>
-</p>
+### Arsenyc 
+[![Arsenyc](./assets/arsenyc.png)](https://github.com/Sp00kySkelet0n/Arsenyc/tree/master)
+Arsenyc is a fork of the tool Arsenal by Orange but with added support of Notion synchronization so notion pages are converted to cheatsheets : [Arsenyc GITHUB](https://github.com/Sp00kySkelet0n/Arsenyc/tree/master)

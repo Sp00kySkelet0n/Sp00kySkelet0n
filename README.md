@@ -1,6 +1,6 @@
-<h1 align="center">
-  <img src="assets/name.gif" width="600" style="border-radius: 12px; padding: 4px;" />
-</h1>
+<p align="center">
+  <img src="assets/name.gif" width="100%" style="max-width: 600px; border-radius: 12px;" />
+</p>
 
 ## 🧬 About Me
 

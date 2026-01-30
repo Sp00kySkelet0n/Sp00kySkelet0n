@@ -49,7 +49,7 @@
       <p>Advanced C&amp;C malware PoC written in Nim over Tor with a Python Flask server and libcurl networking.</p>
     </td>
     <td align="center" width="50%">
-      <a href="https://github.com/Sp00kySkelet0n/MultiVolatilityWeb">
+      <a href="https://github.com/BoBNewz/MultiVolatility">
         <img src="./assets/multivol.png" width="400" alt="Multivol"/>
       </a>
       <h4>MultiVol</h4>
